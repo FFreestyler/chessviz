@@ -1,3 +1,4 @@
-chessboard.out: chessboard.cpp
-	g++ chessboard.cpp -o chessboard.out
+chessboard.out:
+	g++ -Wall chessboard.cpp -o chessboard.out
+	./chessboard.out
 
