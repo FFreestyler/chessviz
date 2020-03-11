@@ -1,13 +1,12 @@
 #include <cstdlib>
-#include <fstream>
 #include <iostream>
 using namespace std;
 
 int main()
 
 {
-  std::ofstream out;
-  out.open("chess.txt");
+  //std::ofstream cout;
+  //cout.open("chess.txt");
   setlocale(LC_ALL, "Rus");
   int i, j;
   cout << "Chessboard:\n"
@@ -16,139 +15,139 @@ int main()
     for (j = 0; j <= 16; j++) {
       if (i == 0) {
         if (j == 1)
-          fout << "r";
+          cout << "r";
         if (j == 2)
-          fout << "n";
+          cout << "n";
         if (j == 3)
-          fout << "b";
+          cout << "b";
         if (j == 4)
-          fout << "q";
+          cout << "q";
         if (j == 5)
-          fout << "k";
+          cout << "k";
         if (j == 6)
-          fout << "b";
+          cout << "b";
         if (j == 7)
-          fout << "n";
+          cout << "n";
         if (j == 8)
-          fout << "r";
+          cout << "r";
         if (j == 0)
-          fout << "8";
+          cout << "8";
       }
       if (i == 1) {
         if (j == 1)
-          fout << "p";
+          cout << "p";
         if (j == 2)
-          fout << "p";
+          cout << "p";
         if (j == 3)
-          fout << "p";
+          cout << "p";
         if (j == 4)
-          fout << "p";
+          cout << "p";
         if (j == 5)
-          fout << "p";
+          cout << "p";
         if (j == 6)
-          fout << "p";
+          cout << "p";
         if (j == 7)
-          fout << "p";
+          cout << "p";
         if (j == 8)
-          fout << "p";
+          cout << "p";
         if (j == 0)
-          fout << "7";
+          cout << "7";
       }
       if (i == 6) {
         if (j == 1)
-          fout << "P";
+          cout << "P";
         if (j == 2)
-          fout << "P";
+          cout << "P";
         if (j == 3)
-          fout << "P";
+          cout << "P";
         if (j == 4)
-          fout << "P";
+          cout << "P";
         if (j == 5)
-          fout << "P";
+          cout << "P";
         if (j == 6)
-          fout << "P";
+          cout << "P";
         if (j == 7)
-          fout << "P";
+          cout << "P";
         if (j == 8)
-          fout << "P";
+          cout << "P";
         if (j == 0)
-          fout << "2";
+          cout << "2";
       }
 
       if (i == 7) {
         if (j == 1)
-          fout << "R";
+          cout << "R";
         if (j == 2)
-          fout << "N";
+          cout << "N";
         if (j == 3)
-          fout << "B";
+          cout << "B";
         if (j == 4)
-          fout << "Q";
+          cout << "Q";
         if (j == 5)
-          fout << "K";
+          cout << "K";
         if (j == 6)
-          fout << "B";
+          cout << "B";
         if (j == 7)
-          fout << "N";
+          cout << "N";
         if (j == 8)
-          fout << "R";
+          cout << "R";
         if (j == 0)
-          fout << "1";
+          cout << "1";
       }
       if (i == 8) {
         if (j == 0)
-          fout << " ";
+          cout << " ";
         if (j == 1)
-          fout << "a";
+          cout << "a";
         if (j == 2)
-          fout << "b";
+          cout << "b";
         if (j == 3)
-          fout << "c";
+          cout << "c";
         if (j == 4)
-          fout << "d";
+          cout << "d";
         if (j == 5)
-          fout << "e";
+          cout << "e";
         if (j == 6)
-          fout << "f";
+          cout << "f";
         if (j == 7)
-          fout << "g";
+          cout << "g";
         if (j == 8)
-          fout << "h";
+          cout << "h";
       }
       if (i == 2) {
         if (j == 0)
-          fout << "6";
+          cout << "6";
       }
 
       if (i == 3) {
         if (j == 0)
-          fout << "5";
+          cout << "5";
       }
 
       if (i == 4) {
         if (j == 0)
-          fout << "4";
+          cout << "4";
       }
 
       if (i == 5) {
         if (j == 0)
-          fout << "3";
+          cout << "3";
       }
 
       if (i % 2 == 1)
         if (j % 2 == 1)
-          fout << "  ";
+          cout << "  ";
         else
-          fout << "  ";
+          cout << "  ";
       else if (j % 2 == 1)
-        fout << "  ";
+        cout << "  ";
 
       else
-        fout << "  ";
+        cout << "  ";
     }
-    fout << endl;
+    cout << endl;
   }
-  out.close();
+  //cout.close();
   return 0;
 }
 
