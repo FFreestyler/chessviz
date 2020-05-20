@@ -1,4 +1,4 @@
-programa: bin/program
+programa: bin/programa
 
 
 build/main.o: src/main.c build
@@ -6,9 +6,9 @@ build/main.o: src/main.c build
 build/board.o: src/board.c build
 	gcc -Wall -Werror -c src/board.c -o build/board.o
 build/board_print_plain.o: src/board_print.c
-	gcc  -Wall -Werror -c src/board_print_plain.c -o build/board_print.o
+	gcc  -Wall -Werror -c src/board_print.c -o build/board_print.o
 bin/programa: build/main.o build/board.o build/board_print.o bin
-	gcc -Wall -Werror build/main.o build/board.o build/board_print.o -lm -o bin/program
+	gcc -Wall -Werror build/main.o build/board.o build/board_print.o -lm -o bin/programa
 
 
 .PHONY : clean
