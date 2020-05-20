@@ -8,7 +8,7 @@ build/board.o: src/board.c build
 build/board_print_plain.o: src/board_print.c
 	gcc  -Wall -Werror -c src/board_print_plain.c -o build/board_print.o
 bin/programa: build/main.o build/board.o build/board_print.o bin
-	gcc -Wall -Werror build/main.o build/board.o build/board_print.o -lm -o bin/programa
+	gcc -Wall -Werror build/main.o build/board.o build/board_print.o -lm -o bin/program
 
 
 .PHONY : clean
