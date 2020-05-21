@@ -12,6 +12,7 @@ build/programa_test.o: test/test.c build
 	gcc -I thirdparty -I src -c test/test.c -o build/programa_test.o
 bin/programa: build/main.o build/board.o build/board_print.o bin
 	gcc -Wall -Werror build/main.o build/board.o build/board_print.o -lm -o bin/programa
+	
 bin/programa_test: build/programa_test.o build/board.o build/board_print.o bin
 	gcc -Wall -Werror build/programa_test.o build/board.o build/board_print.o -lm -o bin/programa_test
 
