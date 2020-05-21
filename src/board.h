@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int y_1, y_2, x_1, x_2, k;
+int x_1, x_2, y_1, y_2, k;
 void board(char mas[10][10]);
 void chess(char mas[10][10]);
 int getxy(char a[20], char f1, char f2, int mode);
