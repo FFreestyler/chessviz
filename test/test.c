@@ -11,12 +11,12 @@ CTEST(coords, incorrect_mode)
 
 CTEST(coords, correct_knight)
 {
-    ASSERT_TRUE(chessmovement(3, 2, -6, 3, mas));
+    ASSERT_TRUE(chessmovement(8, 2, 6, 3, mas));
 }
 
 CTEST(coords, incorrect_knight)
 {
-    ASSERT_FALSE(chessmovement(8, 2, 7, 2, mas));
+    ASSERT_FALSE(chessmovement(6, 2, -3, 2, mas));
 }
 
 CTEST(coords, correct_paws)
