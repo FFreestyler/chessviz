@@ -29,11 +29,6 @@ CTEST(coords, incorrect_paws)
     ASSERT_FALSE(chessmovement(2, 4, 5, 4, mas));
 }
 
-CTEST(coords, incorrect_rook)
-{
-    ASSERT_FALSE(chessmovement(8, 1, 8, 2, mas));
-}
-
 int main(int argc, const char** argv)
 {
     board(mas);
